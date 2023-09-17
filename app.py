@@ -15,6 +15,11 @@ yes1 = "Water is safe and Drinkable💧"
 noo = "https://v3.cdnpk.net/videvo_files/video/premium/partners0067/thumbnails/BB_2d1fd848-635c-4ef1-b07f-9db6fc7ed10a_large.jpg"
 noo1 = "Water is Not safe for Drinking🚱"
 
+
+@app.route('/')
+def hello_world():
+    return render_template("index.html")
+
 @app.route('/', methods=['POST', 'GET'])
 def predict():
     if request.method == 'POST':
