@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 pd.options.mode.chained_assignment = None  # default='warn'
-import warnings
-warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 water_data = pd.read_csv("./water_prediction.csv")
